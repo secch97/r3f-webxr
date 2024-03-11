@@ -8,7 +8,9 @@ export const XrCubeContainer = () => {
     <>
       {/* Inits an WebXR Session - VR, AR*/}
       <ARButton
-        
+        sessionInit={{ optionalFeatures: [
+          'dom-overlay'
+     ] }}
       />{" "}
       {/* Main Tag for React Three Fiber as it sets up the rendering process*/}
       <Canvas>
