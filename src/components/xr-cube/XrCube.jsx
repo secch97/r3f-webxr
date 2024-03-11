@@ -2,7 +2,7 @@ import { OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 
-export const Cube = () => {
+export const XrCube = () => {
     const cubeRef = useRef();
   /* Animation */
   /* This hook allows you to execute code on every rendered frame, like running effects, updating controls, etc*/
@@ -16,7 +16,7 @@ export const Cube = () => {
       {/* Controls for moving the object */}
       <OrbitControls></OrbitControls>
       {/* 3D Object */}
-      <mesh ref={cubeRef}>
+      <mesh ref={cubeRef} position-z={-5} >
         {/* All of these components are automatically attached to the mesh component*/}
         {/* Shape of a cube */}
         <boxGeometry args={[2,2,2]}></boxGeometry>
