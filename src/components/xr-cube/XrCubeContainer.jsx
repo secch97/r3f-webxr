@@ -8,16 +8,7 @@ export const XrCubeContainer = () => {
     <>
       {/* Inits an WebXR Session - VR, AR*/}
       <ARButton
-        className="ar_button"
-        sessionInit={{
-          optionalFeatures: [
-            "local-floor",
-            "bounded-floor",
-            "hand-tracking",
-            "layers",
-            "dom-overlay",
-          ],
-        }}
+        
       />{" "}
       {/* Main Tag for React Three Fiber as it sets up the rendering process*/}
       <Canvas>
